@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var _2circle_1 = require("./2circle");
-function distance(CircleOne, CircleTwo, d) {
-    var distance = Math.pow(CircleOne.radius - CircleTwo.radius, 2) + Math.pow(d, 2);
-    return Math.sqrt(distance);
+var qlysachdoc_1 = require("./qlysachdoc");
+var star = [];
+function sta(booklist) {
+    console.log(booklist.title, booklist.author, booklist.alreadyRead);
 }
-var top = new _2circle_1.Circle(9);
-var up = new _2circle_1.Circle(5);
-console.log(distance(top, up, 24));
+star.push(new qlysachdoc_1.Booklist('đắc nhân tâm', 'gia phong', true));
+star.push(new qlysachdoc_1.Booklist('không học là ngu', 'gia phong', false));
+star.forEach(sta);
