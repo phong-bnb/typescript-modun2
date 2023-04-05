@@ -1,11 +1,11 @@
 class Staff{
-    name:string;
-    email:string;
-    age:number;
-    constructor(name:string,email:string,age:number){
-        this.name=name
-        this.email=email
-        this.age=age
+    private name:string;
+    private email:string;
+    private age:number;
+    constructor(){
+        this.name= ' phong'
+        this.email='ghdfghd'
+        this.age= 25
 
     }
     getName(){
@@ -27,5 +27,6 @@ return this.age
      this.age = age
     }
 }
-let sta1 = new Staff('Phong','ngphong.0708@gmail.com',25)
-console.log(sta1);
+let sta1 = new Staff()
+sta1.setAge(18)
+console.log(sta1.getAge());

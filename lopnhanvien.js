@@ -1,8 +1,8 @@
 var Staff = /** @class */ (function () {
-    function Staff(name, email, age) {
-        this.name = name;
-        this.email = email;
-        this.age = age;
+    function Staff() {
+        this.name = ' phong';
+        this.email = 'ghdfghd';
+        this.age = 25;
     }
     Staff.prototype.getName = function () {
         return this.name;
@@ -24,5 +24,6 @@ var Staff = /** @class */ (function () {
     };
     return Staff;
 }());
-var sta1 = new Staff('Phong', 'ngphong.0708@gmail.com', 25);
-console.log(sta1);
+var sta1 = new Staff();
+sta1.setAge(18);
+console.log(sta1.getAge());
