@@ -1,17 +1,9 @@
-function fibonacci(n) {
-    if (n <= 1) {
-        return n;
+function inso(x) {
+    if (x <= 1) {
+        return x;
     }
     else {
-        return fibonacci(n - 1) + fibonacci(n - 2);
+        return (inso(x - 1) + inso(x - 2));
     }
 }
-console.log(fibonacci(6));
-//   function printFibonacci(n) {
-//     let sum = 0
-//     for (let i = 0; i < n; i++) {
-//      sum += fibonacci(i);
-//     }
-//     return sum
-//   }
-//   console.log(printFibonacci(10));
+console.log(inso(6));

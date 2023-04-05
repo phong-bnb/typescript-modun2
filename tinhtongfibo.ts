@@ -1,18 +1,16 @@
-function fibonacci(n) {
-    if (n <= 1) {
-      return n;
-    } else {
-      return fibonacci(n - 1) + fibonacci(n - 2);
-    }
+function Inso(x){
+if(x<=1){
+return x 
+} else{
+return (Inso(x-1)+Inso(x-2))
+}  
+}
+console.log(Inso(6));
+function Tong(x){
+  let sum = 0 
+  for(let i = 0 ; i<x; i++ ){
+    sum+=Inso(i)
   }
-
-  function printFibonacci(n) {
-    let sum = 0
-    for (let i = 0; i < n; i++) {
-     sum += fibonacci(i);
-    }
-    return sum
-  }
-  
-  console.log(printFibonacci(10));
-  
+return sum
+}
+console.log(Tong(10));
